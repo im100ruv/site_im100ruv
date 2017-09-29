@@ -1,0 +1,9 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	{% for c in content %}
+		<!-- This is jinja2. By default Django uses jinja2 engine to render templates. jinja2 uses double curly braces like angularjs. To use angular with jinja either you make use of interpolation tags in angular or simply put angular double braces inside jinja double braces. -->
+		<p>{{c}}</p>
+	{% endfor %}
+
+{% endblock %}
