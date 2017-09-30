@@ -16,7 +16,10 @@ Steps to run application
 2)Make sure you have Python and Django installed on your system.
 	If not, search for a guide to install Python and Django. 
 
+
 3)Go to the root directory in your command prompt and type following:
+
+	pip install
 
 	python manage.py migrate
 
