@@ -1,3 +1,4 @@
 /*.sqlite3
 /site_im100ruv/secret_key.py
-/site_im100ruv/staticfiles/
+/staticfiles/
+/site_im100ruv/__pycache__/
