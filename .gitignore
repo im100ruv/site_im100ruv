@@ -2,3 +2,6 @@
 /site_im100ruv/secret_key.py
 /staticfiles/
 /site_im100ruv/__pycache__/
+/site_im100ruv/env.py
+/.env
+/Procfilelocal

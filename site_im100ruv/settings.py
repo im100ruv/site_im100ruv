@@ -48,7 +48,13 @@ SECRET_KEY = find_or_create_secret_key()
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+if os.path.exists(os.getcwd() + '/env.py'):
+    #env.py is excluded using the .gitignore file - when moving to production we can automatically set debug mode to off:
+    from env import *
+else:
+    DJANGO_ENV = False
+
+DEBUG = DJANGO_ENV
 
 ALLOWED_HOSTS = ['site-im100ruv.herokuapp.com','127.0.0.1']
 
